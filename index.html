@@ -3,12 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inconsolata:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1>Đàm Công Thoại</h1>
-    <h2>Mã sinh viên: B21DCCN695</h2>
-    <h2>Nhóm lớp: 02</h2>
-    <h2>Ngày sinh: 16/09/2003</h2>
+    <header>
+        <div class="header" id="home">
+            <div class="header__logo">
+                <a href="#">My Portfolio</a>
+            </div>
+    
+            <ul class="navlist">
+                <li><a class="navlist__link" href="#about">About Me</a></li>
+                <li><a class="navlist__link" href="#experiences">Experiences</a></li>
+                <li><a class="navlist__link" href="#projects">Projects</a></li>
+                <li><a class="navlist__link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="intro">
+            <div class="intro__heading">
+                <h2><span>Hi, </span>I'm Thoai</h2>
+                <h4>A student majoring in Information Techlogogy at PTIT.</h4>
+                <h4>My goal is to become a fullstack web developer.</h4>
+            </div>
+
+            <div class="intro__img">
+                <img src="./assets/images/home-icon.png" alt="A boy who is learning code">
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="box__heading">
+                <h3 class="heading">About Me</h3>
+                <p class="sub__heading">My personal information</p>
+            </div>
+
+            <div class="wrapper">
+                <div class="about__img">
+                    <img src="./assets/images/icon.png" alt="">
+                </div>
+    
+                <div class="about__info">
+                    <h4 class="about__info-heading">A beginner developer</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-arrow"></i><span>Name:</span> Dam Cong Thoai</li>
+                        <li><i class="fa-solid fa-location-arrow"></i><span>Gender:</span> Male</li>
+                        <li><i class="fa-solid fa-location-arrow"></i><span>Age:</span> 21</li>
+                        <li><i class="fa-solid fa-location-arrow"></i><span>Address:</span> Ninh Giang, Hai Duong, Viet Nam</li>
+                        <li><i class="fa-solid fa-location-arrow"></i><span>Expertise:</span> Web developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="experiences" id="experiences">
+            <div class="box__heading">
+                <h2 class="heading">Experiences</h2>
+                <p class="sub__heading">All about my experiences</p>
+            </div>
+
+            <div class="content">
+                <div class="content__item">
+                    <h4>Languages</h4>
+
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>HTML/CSS/JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="content__item">
+                    <h4>Technologies</h4>
+
+                    <ul>
+                        <li>Spring, Spring MVC</li>
+                        <li>Django</li>
+                        <li>MySQL, SQL Server</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <div class="box__heading">
+                <h2 class="heading">Projects</h2>
+                <p class="sub__heading">All projects I have contributed</p>
+            </div>
+
+            <div class="content">
+                    <a href="https://github.com/dcthoai/web-book" class="content__item">
+                        <div class="img"><img src="./assets/images/Screenshot (18).png" alt="Ảnh demo dự án"></div>
+                        
+                        <div class="info">
+                            <h4>ABC Book</h4>
+                            <p>This is a simple online book sales website. It was built with Python Dijango.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/HaNguyen1099/TingTong-App" class="content__item">
+                        <div class="img"><img src="./assets/images/Screenshot (19).png" alt="Ảnh demo dự án"></div>
+                        
+                        <div class="info">
+                            <h4>TingTong-App</h4>
+                            <p>An Android app helps to find accommodation for students and working people use Firebase Realtime Database.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/dcthoai/band-web" class="content__item">
+                        <div class="img"><img src="./assets/images/Screenshot (20).png" alt="Ảnh demo dự án"></div>
+                        
+                        <div class="info">
+                            <h4>The Band</h4>
+                            <p>Design interface for a personal website of a band.</p>
+                        </div>
+                    </a>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="box__heading">
+                <h2 class="heading">Contact</h2>
+                <p class="sub__heading">Contact with me</p>
+            </div>
+
+            <div class="content">
+                <div class="contact__info">
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i><span>Email: </span> dcthoai1023@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i><span>Phone: </span> 0355061023</li>
+                    </ul>
+                </div>
+
+                <div class="contact__link">
+                    <ul>
+                        <li><a href="https://www.facebook.com/cth.169"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://github.com/dcthoai"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="move-up apear"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></button>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
