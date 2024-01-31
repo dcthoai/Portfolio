@@ -1,0 +1,170 @@
+
+/* Disable hover effect when device is not support */
+@media (hover: none) and (pointer: coarse) {
+    .header .navlist__link:hover{
+        color: #fff;
+    }
+
+    .projects .content .content__item:hover{
+        cursor: none;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .contact .contact__link li i:hover{
+        opacity: 1;
+    }
+
+    .move-up:hover{
+        transform: scale(1);
+        opacity: 1;
+        cursor: none;
+    }
+}
+
+/*  Mobile  */
+@media (max-width: 739px) {
+    header {
+        width: 100%;
+        height: 48px;
+    }
+
+    .header .header__logo a{
+        font-size: 24px;
+    }
+
+    .header .navlist{
+        position: absolute;
+        z-index: -1;
+        top: 48px;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        transition: all ease-in 0.4s;
+    }
+
+    .header .navlist li{
+        background-color: #4e4e4e;
+    }
+
+    .header .navlist.active{
+        right: 0;
+    }
+
+    .header .navbar{
+        margin: -20px;
+        display: block;
+        width: 64px;
+        height: 48px;
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+    .header .navbar.active{
+        color: #ff1493;
+    }
+
+    .header .navlist .navlist__link{
+        display: block;
+        width: 148px;
+        font-size: 18px;
+        line-height: 46px;
+    }
+
+    .intro{
+        flex-direction: column;
+    }
+
+    .box__heading{
+        padding: 0 12px;
+    }
+    
+    .sub__heading{
+        font-size: 16px;
+    }
+    
+    .heading {
+        font-size: 24px;
+    }
+
+    .intro .intro__heading h2{
+        line-height: 28px;
+        font-size: 28px;
+    }
+    
+    .intro .intro__heading h4{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .intro .intro__heading span{
+        font-size: 28px;
+        color: #ff1493;
+    }
+
+    .about .wrapper{
+        flex-direction: column;
+    }
+
+    .experiences .content{
+        flex-direction: column;
+        padding: 32px;
+    }
+
+    .experiences .content .content__item {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .experiences .content .content__item ul{
+        padding-left: 48px;
+    }
+
+    .projects .content .content__item{
+        flex-direction: column;
+    }
+
+    .projects .content__item .info{
+        flex: none;
+        padding-left: 12px;
+    }
+
+    .contact .content{
+        flex-direction: column;
+    }
+
+    .contact .contact__info li{
+        font-size: 16px;
+    }
+
+    .contact .contact__link{
+        margin-top: 36px;
+        padding: 0;
+    }
+
+    .contact .contact__link ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact .contact__link li i{
+        font-size: 28px;
+    }
+
+    .move-up{
+        width: 36px;
+        height: 36px;
+    }
+
+    .move-up i{
+        font-size: 24px;
+    }
+}
+
+/* Tablet -> PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
