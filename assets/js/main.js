@@ -12,10 +12,8 @@ navbarButton.addEventListener('mouseup', function() {
     }
 
     if (navlist.classList.contains('active')){
-        setTimeout(function(){
-            navlist.classList.remove('active');
-            navbarButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
-        }, 300);
+        navlist.classList.remove('active');
+        navbarButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
     } else {
         navlist.classList.add('active');     
         navbarButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';

@@ -40,7 +40,7 @@
         right: -100%;
         display: flex;
         flex-direction: column;
-        transition: all ease-in 0.4s;
+        transition: all ease 0.3s;
     }
 
     .header .navlist li{
@@ -107,6 +107,10 @@
         flex-direction: column;
     }
 
+    .about .about__img img {
+        margin-bottom: 64px;
+    }
+
     .experiences .content{
         flex-direction: column;
         padding: 32px;
@@ -134,8 +138,14 @@
         flex-direction: column;
     }
 
+    .contact .contact__info ul{
+        width: fit-content;
+        margin: 0 auto;
+    }
+
     .contact .contact__info li{
         font-size: 16px;
+        width: fit-content;
     }
 
     .contact .contact__link{
@@ -164,7 +174,5 @@
 
 /* Tablet -> PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
-    .wide {
-        width: 644px;
-    }
+    
 }
